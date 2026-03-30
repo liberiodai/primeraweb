@@ -56,5 +56,179 @@
             <h3>Ir a Contacto</h3>
             <a href="vistas/contacto.html">Ir a contactame</a>
         </div>
+
+        <!--img: esta etiqueta me permite insertar imagenes dentro de mi documentos HTL
+        esta etiqueta tiene algunos parametris y l mas importante es el parámtro src (), esta
+        etiqueta es una  etiquetya simple -->
+        <div>
+            <h2>Imagen HTML</h2>
+            <img src="img/Happy-Cats__880_large.webp" alt="Gatito feliz" width="500px" height="400px"><!--el alt es en caso que no se muestre la iamgem-->
+        </div>
+        <!--la etiqueta table<th>: esta etiqueta me permite generar o crear tablas 
+        estatias conformadas por fila y columnas-->
+        <div>
+            <h2>Tabla de Gatos</h2>
+            <table border="1px">
+                <tr>
+                    <th>Posición</th><!--columna de las filas-->
+                    <th>Raza de Gato</th>
+                    <th>Años de vida</th>
+                    <th>Nivel de energía</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Siamés</td>
+                    <td>15</td>
+                    <td>10 pts</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Persa</td>
+                    <td>14</td>
+                    <td>6 pts</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Maine Coon</td>
+                    <td>13</td>
+                    <td>8 pts</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Bengali</td>
+                    <td>12</td>
+                    <td>10 pts</td>
+                </tr>
+                <tr>
+                    <td>5</td><!--colspan para combinar columnas-->
+                    <td>Rangdoll</td>
+                    <td>15</td>
+                    <td>5 pts</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">6</td>
+                    <td>British Shorthair</td>
+                    <td>14</td>
+                    <td>6 pts</td>
+                </tr>
+                <tr>
+                    <th colspan="4">total</th>
+                    <td>46 pts</td>
+                </tr>
+            </table>
+            
+        </div>
+        <div>
+            <h2>Tabla Hombre - Mujeres</h2>
+            <table border="1 px">
+                <tr>
+                    <th></th>
+                    <th rowspan="2"></th>
+                    <th colspan="2">Media</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Altura</td>
+                    <td>Peso</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">sexo</td>
+                    <td>Hombres</td>
+                    <td>1.9</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Mujeres</td>
+                    <td>1.7</td>
+                    <td>60</td>
+                </tr>
+
+            </table>
+        </div>
+        <div>
+            <h2>Diferencias entre el Perro y el Hombre</h2>
+            <table border="1 px">
+                <tr>
+                    <th colspan="4">DIFERENCIA ENTRE EL PERRO Y EL HOMBRE</th>
+
+                </tr>
+                <tr>
+                    <th rowspan="2">DIFERENCIAS</th>
+                    <th colspan="2">PERRO</th>
+                    <th rowspan="2">HOMBRE</th>
+                </tr>
+                <tr>
+                    <th>PEQUEÑO</th>
+                    <th>GRANDE</th>
+                </tr>
+                <tr>
+                    <td>Duración crecimiento</td>
+                    <td>10 meses</td>
+                    <td>18 a 24 meses</td>
+                    <td>16 años</td>
+                </tr>
+                <tr>
+                    <td>Tiempo de gestión</td>
+                    <td colspan="2"> 58 a 63 dias</td>
+                    <td>9 meses</td>
+                </tr>
+                <tr>
+                    <td>Duración de vida del pelo/cabello</td>
+                    <td colspan="2">1 año</td>
+                    <td>2 a 7 años</td>
+                </tr>
+
+            </table>
+        </div>
+        <!-- la etiqueta de listas me permite listar items de forma ordenada o desordenadas
+         <ul></ul>(desordenadas) y <ol></ol>(ordenadas) listas ordenadas-->
+         <div>
+            <h2> Lista del mercado</h2>
+            <ul style="list-style: circle;">
+                <li>Frutas
+                    <ul>
+                        <li>Manzana</li>
+                        <li>Pera</li>
+                        <li>Uvas</li>
+                    </ul>
+                </li>
+                <li>Verduras</li>
+                <li>Lacteos</li>
+                <li>Carnes</li>
+                <li>Cereales</li>
+            </ul>
+
+            <h2>Listas Ordenadas</h2>
+            <ol type="a">
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>C#</li>
+                <li>Python</li>
+            </ol>
+         </div>
+         <!--FORMULARIOS la etiqueta <form> me permite agrupar distintas etiquetas
+            como label, input, selection, radio button, button entre otras
+            action: realizar un proceso al presionar un boton,va a ser como un contenedor 
+            input el tipo de dato que voy a ingresar
+            id: se usa una sola vez,
+            submit: realizado-->
+            <div>
+                <h2>FORMULARIO DE DATOS</h2>
+                <form action="">
+                    <div>
+                        <label for="Nombre">Ingrese el Nombre</label><!--campo de texto estatico-->
+                        <input type="text" id="Nombre" name="Nombre"> <!--el id solo se puede usar una sola vez no se puede volver a poner-->
+                    </div>
+                    <div>
+                        <label for="edad">Ingrese la edad del estudiante</label> <!--Apunto al id el for-->
+                        <input type="number" id="edad" name="edad"><!--required: si no pongo nada me va a salir un error porque tengo que poner datods-->
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
     </body>
 </html>
