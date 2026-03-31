@@ -218,15 +218,61 @@
                 <form action="">
                     <div>
                         <label for="Nombre">Ingrese el Nombre</label><!--campo de texto estatico-->
-                        <input type="text" id="Nombre" name="Nombre"> <!--el id solo se puede usar una sola vez no se puede volver a poner-->
+                        <input type="text" id="Nombre" name="Nombre" required> <!--dinamico, el id solo se puede usar una sola vez no se puede volver a poner-->
                     </div>
                     <div>
                         <label for="edad">Ingrese la edad del estudiante</label> <!--Apunto al id el for-->
-                        <input type="number" id="edad" name="edad"><!--required: si no pongo nada me va a salir un error porque tengo que poner datods-->
+                        <input type="number" id="edad" name="edad" required><!--required: si no pongo nada me va a salir un error porque tengo que poner datods-->
+                    </div><!--estructura apartes para poder moverles-->
+
+                    <!--etiqueta tipo select-->
+                    <div>
+                        <label for="">Selecciona su lenguaje de programción favorita</label>
+                        <select name="lenguaje" id="lenguaje">
+                            <option value=""></option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                            <option value="C++">C++</option>
+                            
+                        </select><!--etiqueta principal-->
                     </div>
 
                     <div>
-                        <input type="submit" value="Enviar">
+                        <label for="">Seleccion tu género</label>
+                        <select name="género" id="género">
+                            <option value=""></option>
+                            <option value="Femenino">Femenino</option>
+                            <option value="Masculino">Masculino</option>
+                            <option value="Otros">Otros</option>
+                           
+                        </select>
+                    </div>
+                    <!--radio button: seleccion mas de dos atributos-->
+
+                    <div>
+                        <label for="">Edad</label>
+                        <br>
+                        <input type="radio" name="menor" id="menor" value="menoredad">
+                        <label for="">0-16</label>
+                        <br>
+                        <input type="radio" name="mayor" id="mayor" value="mayoredad">
+                        <label for="">17-65</label>
+                        <br>
+                    </div>
+                    <!--etiqueta chekbox-->
+                    <div>
+                        <label for="">Tipos de autos</label>
+                        <br>
+                        <input type="checkbox" name="deportivo" id="deportivo" value="deportivo">
+                        <label for="">Deportivo</label>
+                        <br>
+                        <input type="checkbox" name="sedan" id="sedan" value="sedan">
+                        <label for="">Sedan</label>
+                        <br>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="Enviar" ><!--submit. realizado-->
                     </div>
                 </form>
             </div>
