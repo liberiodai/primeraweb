@@ -3,278 +3,299 @@
 <!--ESTRUCTURA BASICA DE HTML-->
 
 <html lang="esp"><!--se le puede poner el idioma desde el inicio-->
-    <head><!--informacion dentro de datos, todo lo no visible dentro de la pagina web-->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8"><!--me muestra informacion, codificacion universal cualquier tipo de caracteres-->
-        <title>Primera Página Web</title>
-    </head>
-    <body style="color:blueviolet">
-        <!--cabeceras h titulo, en 6 tipos-->
-        <h1>Hola mundo en mi primera página</h1>
-        <h2>Subtitulo</h2>
-        <h3>Subtitulo del subtitulo</h3>
-        <h4>Titulo</h4>
-        <h5>Titulo</h5>
-        <h6>Titulo</h6>
-        <ul>
-            <li>Nombre: Dailyn Liberio</li><br> <!--salto en la linea horizontal-->
-            <li> Edad: tengo 21 años</li> 
-            <p> Esto es un parrafo</p><!--crea un parrado dentro de html-->
-        </ul><!--contenedores SECTION(GRANDE)- DIV(MAS PEQUEÑO)
+
+<head><!--informacion dentro de datos, todo lo no visible dentro de la pagina web-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"><!--me muestra informacion, codificacion universal cualquier tipo de caracteres-->
+    <title>Primera Página Web</title>
+
+    <!--estilos CSS-->
+    <link rel="stylesheet" href="estilos/estilos.css">
+
+</head>
+
+<body> <!--style="color:blueviolet" los estilos no se debe hacer en cada uno-->
+
+    <!--cabeceras h titulo, en 6 tipos-->
+
+    <div>
+        <h1>Hola mundo en mi primera página</h1>    
+    </div>
+    
+    <h2>Subtitulo</h2>
+    <h3>Subtitulo del subtitulo</h3>
+    <h4>Titulo</h4>
+    <h5>Titulo</h5>
+    <h6>Titulo</h6>
+    <ul>
+        <li>Nombre: Dailyn Liberio</li><br> <!--salto en la linea horizontal-->
+        <li> Edad: tengo 21 años</li>
+        <p> Esto es un parrafo</p><!--crea un parrado dentro de html-->
+    </ul><!--contenedores SECTION(GRANDE)- DIV(MAS PEQUEÑO)
          - ARTICLE(PEQUEÑO, SOLO PARA ARTICULOS), encapsular cada componente-->
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorem totam, laborum qui obcaecati odio veniam possimus alias magni! Nihil deleniti fugit facilis at placeat, molestiae illo vitae minus laudantium.
-        Deleniti voluptatem explicabo amet sunt maiores unde aliquid sed doloribus laudantium, dolor tempora exercitationem maxime, distinctio non optio! Assumenda repellendus consequatur eveniet dicta explicabo dolorum mollitia maxime minus, similique temporibus.
-        Deserunt eius non distinctio maxime earum dolorum a quos mollitia doloribus natus repudiandae, sed rem voluptatibus dolore, reprehenderit ratione illum neque? Odit, incidunt nam impedit delectus fugit ipsa vel perferendis.</p>
-        <!--creamos un contenedor section-->
-        <section style="color:black">
-            <h2 style="color:brown; font-size: 50px; text-align: center"> HTML</h2><!--font-size tamaño de fuente-->
-            <div style="width: 50%; border: solid 1px"><!--para los bordes y la cantidad que ocupa de la hoja-->
-                <p>
-                    Html es un lenguaje de marcado qeu se utiliza para crear páginas web.
-                    Es el lenguaje de marcado estándar para la creacio de documentos en la Worl Wide Web.
-                    HTML se compone de una serie de elementos que se utilizan para estructurar y
-                    presentar el contenido de una página web. Estos elementos incluyen encabezados,
-                    párrafos, enlaces, imágenes,tablas y muchos otros. HTML es un lenguaje muy flexible
-                    y se puede utilizar ára crear una amplia variedad de sitioos web, desde simples páginas
-                    estáticas hasta aplicacionbes web complejas
-                </p>
-            </div><!--el contendor me permite moverlo arriba, abajo, a los lados-->
-        </section>
-        
-        <!--creamos un contenedor para rutas
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorem totam, laborum qui obcaecati odio
+        veniam possimus alias magni! Nihil deleniti fugit facilis at placeat, molestiae illo vitae minus laudantium.
+        Deleniti voluptatem explicabo amet sunt maiores unde aliquid sed doloribus laudantium, dolor tempora
+        exercitationem maxime, distinctio non optio! Assumenda repellendus consequatur eveniet dicta explicabo dolorum
+        mollitia maxime minus, similique temporibus.
+        Deserunt eius non distinctio maxime earum dolorum a quos mollitia doloribus natus repudiandae, sed rem
+        voluptatibus dolore, reprehenderit ratione illum neque? Odit, incidunt nam impedit delectus fugit ipsa vel
+        perferendis.</p>
+    <!--creamos un contenedor section-->
+    <section>
+        <h2></h2> HTML</h2><!--font-size tamaño de fuente-->
+        <div style="width: 50%; border: solid 1px"><!--para los bordes y la cantidad que ocupa de la hoja-->
+            <p>
+                Html es un lenguaje de marcado qeu se utiliza para crear páginas web.
+                Es el lenguaje de marcado estándar para la creacio de documentos en la Worl Wide Web.
+                HTML se compone de una serie de elementos que se utilizan para estructurar y
+                presentar el contenido de una página web. Estos elementos incluyen encabezados,
+                párrafos, enlaces, imágenes,tablas y muchos otros. HTML es un lenguaje muy flexible
+                y se puede utilizar ára crear una amplia variedad de sitioos web, desde simples páginas
+                estáticas hasta aplicacionbes web complejas
+            </p>
+        </div><!--el contendor me permite moverlo arriba, abajo, a los lados-->
+    </section>
+
+    <!--creamos un contenedor para rutas
         rutas: direcciones de contenido o de página web, que me permite redirigir a otros 
         sitios web o otras partes de mi página web,
         existen dos tiposde rutas las absolutas y las relativas
         absolutas: Dirección completa url
         relativas: Dirección de un solo componente-->
-        <div>
-            <h3>Ir a un recurso de Youtube</h3>
-            <a href="https://www.youtube.com/watch?v=tCYbsz_JLEQ&list=RDtCYbsz_JLEQ&start_radio=1" target="_blank">Ir al video</a>
-            <!--a para hacer referencias a un url o otra pagia, target para que se habra en otra pestaña-->
-            <br>
-            <h3>Ir a Contacto</h3>
-            <a href="vistas/contacto.html">Ir a contactame</a>
-        </div>
+    <div>
+        <h3>Ir a un recurso de Youtube</h3>
+        <a href="https://www.youtube.com/watch?v=tCYbsz_JLEQ&list=RDtCYbsz_JLEQ&start_radio=1" target="_blank">Ir al
+            video</a>
+        <!--a para hacer referencias a un url o otra pagia, target para que se habra en otra pestaña-->
+        <br>
+        <h3>Ir a Contacto</h3>
+        <a href="vistas/contacto.html">Ir a contactame</a>
+    </div>
 
-        <!--img: esta etiqueta me permite insertar imagenes dentro de mi documentos HTL
+    <!--img: esta etiqueta me permite insertar imagenes dentro de mi documentos HTL
         esta etiqueta tiene algunos parametris y l mas importante es el parámtro src (), esta
         etiqueta es una  etiquetya simple -->
-        <div>
-            <h2>Imagen HTML</h2>
-            <img src="img/Happy-Cats__880_large.webp" alt="Gatito feliz" width="500px" height="400px"><!--el alt es en caso que no se muestre la iamgem-->
-        </div>
-        <!--la etiqueta table<th>: esta etiqueta me permite generar o crear tablas 
+    <div>
+        <h2>Imagen HTML Gatito</h2>
+        <img src="img/Happy-Cats__880_large.webp" alt="Gatito feliz" width="500px"
+            height="400px"><!--el alt es en caso que no se muestre la iamgem-->
+    </div>
+    <!--la etiqueta table<th>: esta etiqueta me permite generar o crear tablas 
         estatias conformadas por fila y columnas-->
-        <div>
-            <h2>Tabla de Gatos</h2>
-            <table border="1px">
-                <tr>
-                    <th>Posición</th><!--columna de las filas-->
-                    <th>Raza de Gato</th>
-                    <th>Años de vida</th>
-                    <th>Nivel de energía</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Siamés</td>
-                    <td>15</td>
-                    <td>10 pts</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Persa</td>
-                    <td>14</td>
-                    <td>6 pts</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Maine Coon</td>
-                    <td>13</td>
-                    <td>8 pts</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Bengali</td>
-                    <td>12</td>
-                    <td>10 pts</td>
-                </tr>
-                <tr>
-                    <td>5</td><!--colspan para combinar columnas-->
-                    <td>Rangdoll</td>
-                    <td>15</td>
-                    <td>5 pts</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">6</td>
-                    <td>British Shorthair</td>
-                    <td>14</td>
-                    <td>6 pts</td>
-                </tr>
-                <tr>
-                    <th colspan="4">total</th>
-                    <td>46 pts</td>
-                </tr>
-            </table>
-            
-        </div>
-        <div>
-            <h2>Tabla Hombre - Mujeres</h2>
-            <table border="1 px">
-                <tr>
-                    <th></th>
-                    <th rowspan="2"></th>
-                    <th colspan="2">Media</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Altura</td>
-                    <td>Peso</td>
-                </tr>
-                <tr>
-                    <td rowspan="2">sexo</td>
-                    <td>Hombres</td>
-                    <td>1.9</td>
-                    <td>85</td>
-                </tr>
-                <tr>
-                    <td>Mujeres</td>
-                    <td>1.7</td>
-                    <td>60</td>
-                </tr>
+    <div>
+        <h2>Tabla de Gatos</h2>
+        <table border="1px">
+            <tr>
+                <th>Posición</th><!--columna de las filas-->
+                <th>Raza de Gato</th>
+                <th>Años de vida</th>
+                <th>Nivel de energía</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Siamés</td>
+                <td>15</td>
+                <td>10 pts</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Persa</td>
+                <td>14</td>
+                <td>6 pts</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Maine Coon</td>
+                <td>13</td>
+                <td>8 pts</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Bengali</td>
+                <td>12</td>
+                <td>10 pts</td>
+            </tr>
+            <tr>
+                <td>5</td><!--colspan para combinar columnas-->
+                <td>Rangdoll</td>
+                <td>15</td>
+                <td>5 pts</td>
+            </tr>
+            <tr>
+                <td rowspan="2">6</td>
+                <td>British Shorthair</td>
+                <td>14</td>
+                <td>6 pts</td>
+            </tr>
+            <tr>
+                <th colspan="4">total</th>
+                <td>46 pts</td>
+            </tr>
+        </table>
 
-            </table>
-        </div>
-        <div>
-            <h2>Diferencias entre el Perro y el Hombre</h2>
-            <table border="1 px">
-                <tr>
-                    <th colspan="4">DIFERENCIA ENTRE EL PERRO Y EL HOMBRE</th>
+    </div>
+    <div>
+        <h2>Tabla Hombre - Mujeres</h2>
+        <table border="1 px">
+            <tr>
+                <th></th>
+                <th rowspan="2"></th>
+                <th colspan="2">Media</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Altura</td>
+                <td>Peso</td>
+            </tr>
+            <tr>
+                <td rowspan="2">sexo</td>
+                <td>Hombres</td>
+                <td>1.9</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Mujeres</td>
+                <td>1.7</td>
+                <td>60</td>
+            </tr>
 
-                </tr>
-                <tr>
-                    <th rowspan="2">DIFERENCIAS</th>
-                    <th colspan="2">PERRO</th>
-                    <th rowspan="2">HOMBRE</th>
-                </tr>
-                <tr>
-                    <th>PEQUEÑO</th>
-                    <th>GRANDE</th>
-                </tr>
-                <tr>
-                    <td>Duración crecimiento</td>
-                    <td>10 meses</td>
-                    <td>18 a 24 meses</td>
-                    <td>16 años</td>
-                </tr>
-                <tr>
-                    <td>Tiempo de gestión</td>
-                    <td colspan="2"> 58 a 63 dias</td>
-                    <td>9 meses</td>
-                </tr>
-                <tr>
-                    <td>Duración de vida del pelo/cabello</td>
-                    <td colspan="2">1 año</td>
-                    <td>2 a 7 años</td>
-                </tr>
+        </table>
+    </div>
+    <div>
+        <h2>Diferencias entre el Perro y el Hombre</h2>
+        <table border="1 px">
+            <tr>
+                <th colspan="4">DIFERENCIA ENTRE EL PERRO Y EL HOMBRE</th>
 
-            </table>
-        </div>
-        <!-- la etiqueta de listas me permite listar items de forma ordenada o desordenadas
+            </tr>
+            <tr>
+                <th rowspan="2">DIFERENCIAS</th>
+                <th colspan="2">PERRO</th>
+                <th rowspan="2">HOMBRE</th>
+            </tr>
+            <tr>
+                <th>PEQUEÑO</th>
+                <th>GRANDE</th>
+            </tr>
+            <tr>
+                <td>Duración crecimiento</td>
+                <td>10 meses</td>
+                <td>18 a 24 meses</td>
+                <td>16 años</td>
+            </tr>
+            <tr>
+                <td>Tiempo de gestión</td>
+                <td colspan="2"> 58 a 63 dias</td>
+                <td>9 meses</td>
+            </tr>
+            <tr>
+                <td>Duración de vida del pelo/cabello</td>
+                <td colspan="2">1 año</td>
+                <td>2 a 7 años</td>
+            </tr>
+
+        </table>
+    </div>
+    <!-- la etiqueta de listas me permite listar items de forma ordenada o desordenadas
          <ul></ul>(desordenadas) y <ol></ol>(ordenadas) listas ordenadas-->
-         <div>
-            <h2> Lista del mercado</h2>
-            <ul style="list-style: circle;">
-                <li>Frutas
-                    <ul>
-                        <li>Manzana</li>
-                        <li>Pera</li>
-                        <li>Uvas</li>
-                    </ul>
-                </li>
-                <li>Verduras</li>
-                <li>Lacteos</li>
-                <li>Carnes</li>
-                <li>Cereales</li>
-            </ul>
+    <div>
+        <h2> Lista del mercado</h2>
+        <ul style="list-style: circle;">
+            <li>Frutas
+                <ul>
+                    <li>Manzana</li>
+                    <li>Pera</li>
+                    <li>Uvas</li>
+                </ul>
+            </li>
+            <li>Verduras</li>
+            <li>Lacteos</li>
+            <li>Carnes</li>
+            <li>Cereales</li>
+        </ul>
 
-            <h2>Listas Ordenadas</h2>
-            <ol type="a">
-                <li>C</li>
-                <li>C++</li>
-                <li>Java</li>
-                <li>C#</li>
-                <li>Python</li>
-            </ol>
-         </div>
-         <!--FORMULARIOS la etiqueta <form> me permite agrupar distintas etiquetas
+        <h2>Listas Ordenadas</h2>
+        <ol type="a">
+            <li>C</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>C#</li>
+            <li>Python</li>
+        </ol>
+    </div>
+    <!--FORMULARIOS la etiqueta <form> me permite agrupar distintas etiquetas
             como label, input, selection, radio button, button entre otras
             action: realizar un proceso al presionar un boton,va a ser como un contenedor 
             input el tipo de dato que voy a ingresar
             id: se usa una sola vez,
             submit: realizado-->
+    <div>
+        <h2>FORMULARIO DE DATOS</h2>
+        <form action="">
             <div>
-                <h2>FORMULARIO DE DATOS</h2>
-                <form action="">
-                    <div>
-                        <label for="Nombre">Ingrese el Nombre</label><!--campo de texto estatico-->
-                        <input type="text" id="Nombre" name="Nombre" required> <!--dinamico, el id solo se puede usar una sola vez no se puede volver a poner-->
-                    </div>
-                    <div>
-                        <label for="edad">Ingrese la edad del estudiante</label> <!--Apunto al id el for-->
-                        <input type="number" id="edad" name="edad" required><!--required: si no pongo nada me va a salir un error porque tengo que poner datods-->
-                    </div><!--estructura apartes para poder moverles-->
-
-                    <!--etiqueta tipo select-->
-                    <div>
-                        <label for="">Selecciona su lenguaje de programción favorita</label>
-                        <select name="lenguaje" id="lenguaje">
-                            <option value=""></option>
-                            <option value="Java">Java</option>
-                            <option value="Python">Python</option>
-                            <option value="C++">C++</option>
-                            
-                        </select><!--etiqueta principal-->
-                    </div>
-
-                    <div>
-                        <label for="">Seleccion tu género</label>
-                        <select name="género" id="género">
-                            <option value=""></option>
-                            <option value="Femenino">Femenino</option>
-                            <option value="Masculino">Masculino</option>
-                            <option value="Otros">Otros</option>
-                           
-                        </select>
-                    </div>
-                    <!--radio button: seleccion mas de dos atributos-->
-
-                    <div>
-                        <label for="">Edad</label>
-                        <br>
-                        <input type="radio" name="menor" id="menor" value="menoredad">
-                        <label for="">0-16</label>
-                        <br>
-                        <input type="radio" name="mayor" id="mayor" value="mayoredad">
-                        <label for="">17-65</label>
-                        <br>
-                    </div>
-                    <!--etiqueta chekbox-->
-                    <div>
-                        <label for="">Tipos de autos</label>
-                        <br>
-                        <input type="checkbox" name="deportivo" id="deportivo" value="deportivo">
-                        <label for="">Deportivo</label>
-                        <br>
-                        <input type="checkbox" name="sedan" id="sedan" value="sedan">
-                        <label for="">Sedan</label>
-                        <br>
-                    </div>
-
-                    <div>
-                        <input type="submit" value="Enviar" ><!--submit. realizado-->
-                    </div>
-                </form>
+                <label for="Nombre">Ingrese el Nombre</label><!--campo de texto estatico-->
+                <input type="text" id="Nombre" name="Nombre" required>
+                <!--dinamico, el id solo se puede usar una sola vez no se puede volver a poner-->
             </div>
-    </body>
+            <div>
+                <label for="edad">Ingrese la edad del estudiante</label> <!--Apunto al id el for-->
+                <input type="number" id="edad" name="edad"
+                    required><!--required: si no pongo nada me va a salir un error porque tengo que poner datods-->
+            </div><!--estructura apartes para poder moverles-->
+
+            <!--etiqueta tipo select-->
+            <div>
+                <label for="">Selecciona su lenguaje de programción favorita</label>
+                <select name="lenguaje" id="lenguaje">
+                    <option value=""></option>
+                    <option value="Java">Java</option>
+                    <option value="Python">Python</option>
+                    <option value="C++">C++</option>
+
+                </select><!--etiqueta principal-->
+            </div>
+
+            <div>
+                <label for="">Seleccion tu género</label>
+                <select name="género" id="género">
+                    <option value=""></option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Otros">Otros</option>
+
+                </select>
+            </div>
+            <!--radio button: seleccion mas de dos atributos-->
+
+            <div>
+                <label for="">Edad</label>
+                <br>
+                <input type="radio" name="menor" id="menor" value="menoredad">
+                <label for="">0-16</label>
+                <br>
+                <input type="radio" name="mayor" id="mayor" value="mayoredad">
+                <label for="">17-65</label>
+                <br>
+            </div>
+            <!--etiqueta chekbox-->
+            <div>
+                <label for="">Tipos de autos</label>
+                <br>
+                <input type="checkbox" name="deportivo" id="deportivo" value="deportivo">
+                <label for="">Deportivo</label>
+                <br>
+                <input type="checkbox" name="sedan" id="sedan" value="sedan">
+                <label for="">Sedan</label>
+                <br>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar"><!--submit. realizado-->
+            </div>
+        </form>
+    </div>
+</body>
+
 </html>

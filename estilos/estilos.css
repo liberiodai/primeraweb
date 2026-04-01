@@ -1,0 +1,28 @@
+/*Aqui van los estilos css*/
+/*estilos universales*/
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos del body
+RGB combinacion de los tres colores primarios
+R-rojo
+G-verde
+B-azul
+cuando utilizamos este tipo de colores el rango
+esta 8b eso queire deir de 0-256*/
+body{
+    background-color: #E3BBFC;
+    font-style: italic;
+}
+h1{
+    background-color: #BF63F8;
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+    width: 50%;
+    margin: 20px;
+    margin-top: auto;
+}
+
